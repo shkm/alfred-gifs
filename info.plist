@@ -215,7 +215,7 @@ Get a free API key at https://partner.klipy.com/api-keys</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string>schembri</string>
 </dict>
