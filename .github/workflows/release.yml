@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build .alfredworkflow
+        run: |
+          zip -r alfred-gifs.alfredworkflow \
+            icon.png info.plist search.py copy.py
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: alfred-gifs.alfredworkflow
+          generate_release_notes: true

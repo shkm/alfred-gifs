@@ -4,9 +4,10 @@ Search [Klipy](https://klipy.com) for GIFs from Alfred. Browse results in a grid
 
 ## Setup
 
-1. Install the workflow in Alfred
-2. Get a free API key from https://partner.klipy.com/api-keys
-3. Open the workflow settings in Alfred and paste your API key
+1. Download `alfred-gifs.alfredworkflow` from the [latest release](https://github.com/shkm/alfred-gifs/releases/latest)
+2. Double-click to install in Alfred
+3. Get a free API key from https://partner.klipy.com/api-keys
+4. Open the workflow settings in Alfred and paste your API key
 
 ## Usage
 
@@ -14,3 +15,11 @@ Search [Klipy](https://klipy.com) for GIFs from Alfred. Browse results in a grid
 - Browse results in the grid view
 - Select a GIF to copy it to your clipboard
 - Paste it anywhere
+
+## Releasing
+
+```
+./release.sh 1.0.0
+```
+
+This updates the version in `info.plist`, commits, tags, and pushes. GitHub Actions will build the `.alfredworkflow` and create a release.
