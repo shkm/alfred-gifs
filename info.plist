@@ -156,7 +156,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Search Klipy for GIFs using the 'gif' keyword. Select a result to copy its URL to the clipboard.
+	<string>Search Klipy for GIFs using the 'gif' keyword. Select a result to copy it to the clipboard.
 
 Get a free API key at https://partner.klipy.com/api-keys</string>
 	<key>uidata</key>
