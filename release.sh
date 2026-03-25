@@ -19,7 +19,7 @@ fi
 /usr/libexec/PlistBuddy -c "Set :version $VERSION" info.plist
 
 git add info.plist
-git commit -m "Release $TAG"
+git diff --cached --quiet || git commit -m "Release $TAG"
 git tag "$TAG"
 git push origin main "$TAG"
 
