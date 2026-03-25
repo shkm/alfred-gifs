@@ -217,6 +217,6 @@ Get a free API key at https://partner.klipy.com/api-keys</string>
 	<key>version</key>
 	<string>1.0.1</string>
 	<key>webaddress</key>
-	<string>schembri</string>
+	<string>https://github.com/shkm/alfred-gifs</string>
 </dict>
 </plist>
